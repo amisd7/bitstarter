@@ -9,7 +9,7 @@ var outfile = buffer.toString();
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-response.send('outfile');
+response.send(outfile);
 });
 
 //fs.readFile('./index.html', 'utf8', function(err, html) {
